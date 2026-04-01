@@ -13,8 +13,8 @@
  */
 function reduce(array, callback, initialValue) {
     // Обработка случая пустого массива без initialValue
-    if (array.length === 0 && initialValue === undefined) {
-        return undefined;
+    if (array.length === 0) {
+        return initialValue;
     }
 
     let accumulator;
